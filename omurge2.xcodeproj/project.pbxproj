@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A79DBFC01B538189001EB97B /* OTDisplayMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DBFBF1B538189001EB97B /* OTDisplayMessageViewController.swift */; };
+		A79DBFC21B538271001EB97B /* OTCaptureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DBFC11B538271001EB97B /* OTCaptureResponse.swift */; };
 		A7D5D0A11B535E6F00ECC5E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5D0A01B535E6F00ECC5E3 /* AppDelegate.swift */; };
-		A7D5D0A31B535E6F00ECC5E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5D0A21B535E6F00ECC5E3 /* ViewController.swift */; };
 		A7D5D0A61B535E6F00ECC5E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D5D0A41B535E6F00ECC5E3 /* Main.storyboard */; };
 		A7D5D0A81B535E6F00ECC5E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D5D0A71B535E6F00ECC5E3 /* Images.xcassets */; };
 		A7D5D0AB1B535E6F00ECC5E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D5D0A91B535E6F00ECC5E3 /* LaunchScreen.xib */; };
@@ -28,10 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A79DBFBF1B538189001EB97B /* OTDisplayMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTDisplayMessageViewController.swift; path = ../OTDisplayMessageViewController.swift; sourceTree = "<group>"; };
+		A79DBFC11B538271001EB97B /* OTCaptureResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTCaptureResponse.swift; path = ../OTCaptureResponse.swift; sourceTree = "<group>"; };
 		A7D5D09B1B535E6F00ECC5E3 /* omurge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = omurge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D5D09F1B535E6F00ECC5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7D5D0A01B535E6F00ECC5E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7D5D0A21B535E6F00ECC5E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7D5D0A51B535E6F00ECC5E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7D5D0A71B535E6F00ECC5E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A7D5D0AA1B535E6F00ECC5E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -82,9 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				A7D5D0A01B535E6F00ECC5E3 /* AppDelegate.swift */,
-				A7D5D0A21B535E6F00ECC5E3 /* ViewController.swift */,
+				A79DBFBF1B538189001EB97B /* OTDisplayMessageViewController.swift */,
 				A7D5D0C01B535F8400ECC5E3 /* OTRecordVideo.swift */,
 				A7D5D0C21B535FA000ECC5E3 /* OTInbox.swift */,
+				A79DBFC11B538271001EB97B /* OTCaptureResponse.swift */,
 				A7D5D0A41B535E6F00ECC5E3 /* Main.storyboard */,
 				A7D5D0A71B535E6F00ECC5E3 /* Images.xcassets */,
 				A7D5D0A91B535E6F00ECC5E3 /* LaunchScreen.xib */,
@@ -218,8 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79DBFC01B538189001EB97B /* OTDisplayMessageViewController.swift in Sources */,
 				A7D5D0C11B535F8400ECC5E3 /* OTRecordVideo.swift in Sources */,
-				A7D5D0A31B535E6F00ECC5E3 /* ViewController.swift in Sources */,
+				A79DBFC21B538271001EB97B /* OTCaptureResponse.swift in Sources */,
 				A7D5D0A11B535E6F00ECC5E3 /* AppDelegate.swift in Sources */,
 				A7D5D0C31B535FA000ECC5E3 /* OTInbox.swift in Sources */,
 			);
@@ -417,6 +421,7 @@
 				A7D5D0BC1B535E7000ECC5E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7D5D0BD1B535E7000ECC5E3 /* Build configuration list for PBXNativeTarget "omurge2Tests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +430,7 @@
 				A7D5D0BF1B535E7000ECC5E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

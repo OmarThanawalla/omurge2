@@ -14,7 +14,7 @@ import MobileCoreServices
 class OTRecordVideo: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
-    var videoURL: NSURL!
+    var videoURL: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +37,9 @@ class OTRecordVideo: UIViewController, UIImagePickerControllerDelegate, UINaviga
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func moveToInbox(sender: AnyObject) {
+        self.performSegueWithIdentifier("showInbox", sender: nil)
+    }
 
     @IBAction func record(sender: AnyObject) {
         
@@ -46,14 +49,14 @@ class OTRecordVideo: UIViewController, UIImagePickerControllerDelegate, UINaviga
             picker.delegate = self
             picker.allowsEditing = true
             picker.sourceType = UIImagePickerControllerSourceType.Camera
-            picker.mediaTypes = [kUTTypeMovie]
+            picker.mediaTypes = [kUTTypeImage]
             
             self.presentViewController(picker, animated: true, completion: nil)
         }
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        self.videoURL = info[UIImagePickerControllerMediaURL] as! NSURL
+        self.videoURL = info[UIImagePickerControllerEditedImage] as! UIImage
         picker.dismissViewControllerAnimated(true, completion: nil)
 
         
